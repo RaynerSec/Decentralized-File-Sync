@@ -2,7 +2,7 @@
 A decentralized file syncing tool which works without relying on a central server
 
 <h2>Description</h2>
-<p>Decentralized-File-Sync is a decentralized file syncing tool which uses and <a href="https://ipfs.io" title="IPFS">IPFS</a> and <a href="https://zeronet.io" title="ZeroNet">ZeroNet</a> to store and transfer files with optional encryption.</p>
+<p>Decentralized-File-Sync is a decentralized file syncing tool which uses <a href="https://ipfs.io" title="IPFS">IPFS</a> and <a href="https://zeronet.io" title="ZeroNet">ZeroNet</a> to store and transfer files with optional encryption.</p>
 
 <h2>Requirements</h2>
 <ul>
