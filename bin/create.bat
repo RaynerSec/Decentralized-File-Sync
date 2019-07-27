@@ -1,0 +1,1 @@
+cmd /C ZeroNet.cmd siteCreate > res 2>&1 < yes

@@ -1,0 +1,18 @@
+﻿
+ipfs = QmdzqDRgUse8KqbYG9FaKDz9uEv523Vp5R2QEECbiCMjU9
+sha256 = 11aa3d06cf09f57eb1de1b15763d0a10773cdf77fe8e8f21c780053a345146cc
+md5 = 292ce12d37f2f4cac3d2b61892d57ea7
+size = 16433052
+title = Downloading - ZeroNet-win-dist.zip
+saveas = ZeroNet-win-dist.zip
+pattern = ZIP (*.zip)|*.zip
+width = 300
+height = 85
+saveastitle = Save as...
+invisible = 0
+[msgbox]
+done = Done
+errortitle = Error
+erric = Integrity check failed
+errnetw = Couldn't initiliaze the network.
+errsave = Unable to save the file
