@@ -19,7 +19,9 @@ A decentralized file syncing tool which works without relying on a central serve
 
 <ul>
 
-<li>Thanks to the creators and contributors of <a href="https://www.ipfs.io" title="IPFS">IPFS</a> , <a href="https://www.zeronet.io" title="ZeroNet">ZeroNet</a> and <a href="https://www.7-zip.org" title="7-Zip">7-Zip</a> </li>
-
-<li>Have patience! Syncing might not work immediately, files added might not be immediately available for download and they may also not immediately appear on your peers list.</li>
+<li>Have patience! Syncing might not work immediately, files added might not be immediately available for download and may not immediately appear on your peers list.</li>
 </ul>
+
+<h2>Credits</h2>
+
+Thanks to the creators and contributors of <a href="https://www.7-zip.org" title="7-Zip">7-Zip</a> , <a href="https://www.ipfs.io" title="IPFS">IPFS</a> , <a href="https://www.zeronet.io" title="ZeroNet">ZeroNet</a>
