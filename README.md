@@ -19,6 +19,8 @@ A decentralized file syncing tool which works without relying on a central serve
 
 <ul>
 
+<li>To Sync: You and your peers need to have the software running and use the same ZeroNet address in the settings. Sharing the private key is NOT necessary.</li>
+
 <li>Have patience! Syncing might not work immediately, files added might not be immediately available for download and may not immediately appear on your peers list.</li>
 </ul>
 
