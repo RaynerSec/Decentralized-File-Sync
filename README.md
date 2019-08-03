@@ -22,6 +22,11 @@ A decentralized file syncing tool which works without relying on a central serve
 <li>To Sync: You and your peers need to have the software running and use the same ZeroNet address in the settings. Sharing the private key is NOT necessary.</li>
 
 <li>Have patience! Syncing might not work immediately, files added might not be immediately available for download and may not immediately appear on your peers list.</li>
+
+<li>It is recommended to have your <a href="https://zeronet.io/docs/faq/#do-i-need-to-have-a-port-opened">port opened</a> </li>
+
+<li>If syncing takes too long or does not work: Open http://127.0.0.1:43110/[siteaddress] in your browser and retry</li>
+
 </ul>
 
 <h2>Credits</h2>
