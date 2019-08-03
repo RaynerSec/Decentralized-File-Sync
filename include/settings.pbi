@@ -91,13 +91,21 @@ EndIf
   AddGadgetItem(#panel,-1,other$)
   
   FrameGadget(#PB_Any, 2,2,w-4,h-4, "",#PB_Frame_Flat)
+    
+  autosync = CheckBoxGadget(#PB_Any,30,60,250,20,autosync$)
+    
+  state = Val( GetPreferenceString(settingsini$, setautosync$))
   
+  SetGadgetState(autosync, state)
+  
+  GadgetToolTip(autosync, autosyncinfo$)
+      
   sww = CheckBoxGadget(#PB_Any,30,20,250,20,startwithwindows$)
   
-  TextGadget(#PB_Any,50,60,60,20,timeout$)
+  TextGadget(#PB_Any,50,110,60,20,timeout$)
   
-  tout = SpinGadget(#PB_Any,110,60,80,20,10,600,#PB_Spin_Numeric | #PB_Spin_ReadOnly)
-  
+  tout = SpinGadget(#PB_Any,110,110,80,20,10,timeoutmax,#PB_Spin_Numeric | #PB_Spin_ReadOnly)
+          
   timeo$ = GetPreferenceString(settingsini$, settimeout$, Str(60))
   
   SetGadgetText( tout, timeo$)
@@ -110,7 +118,8 @@ EndIf
   SetGadgetState(sww, state)
   
   GadgetToolTip(sww, autostartinfo$)
-      
+       
+  
   CloseGadgetList()
   
   ok = ButtonGadget(#PB_Any, w/2 - 105, WindowHeight(#windowsettings)-30, 110, 25, ok$)
@@ -154,6 +163,8 @@ If CreatePreferences( settingsini$ )
    
    WritePreferenceString( settimeout$ , Str (GetGadgetState(tout) ))
    
+   WritePreferenceString( setautosync$ , Str (GetGadgetState(autosync) ))
+   
    ClosePreferences()
    
    timeout = GetGadgetState(tout)
@@ -163,6 +174,10 @@ EndIf
 If GetGadgetState(sww) = #PB_Checkbox_Checked
   
   Autostart()
+  
+Else
+  
+  Autostart(1)
   
 EndIf
   
@@ -182,7 +197,9 @@ EndIf
   
   w=400 : h=250 
   
-If OpenWindow(#windowsettings, 0 , 0, w, h, settings$, #PB_Window_WindowCentered|#PB_Window_MinimizeGadget, WindowID(#window))
+  DisableWindow(#window, 1)
+  
+If OpenWindow(#windowsettings, 0 , 0, w, h, settings$, #PB_Window_WindowCentered | #PB_Window_SystemMenu, WindowID(#window))
   
   CreateGadgetsAndReadSettings()
     
@@ -257,8 +274,7 @@ Case create
   
 Case copypkey
   
-  key$ = GetPreferenceString(settingsini$, setpkey$)
-  key$ = UnObfuscate(key$)
+  key$ = GetGadgetText(#privatekey)
   
   SetClipboardText(key$)
   
@@ -308,7 +324,9 @@ EndSelect
 ForEver
   
 EndIf
-  
+
+  DisableWindow(#window, 0)
+
 EndProcedure
 ; IDE Options = PureBasic 5.70 LTS (Windows - x64)
 ; Folding = 5

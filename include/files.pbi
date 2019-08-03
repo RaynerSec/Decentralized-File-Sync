@@ -1,42 +1,16 @@
 ﻿CompilerIf #PB_Compiler_Processor = #PB_Processor_x64
 
-    DataSection
-      dla:
-        IncludeBinary "..\bin\dl-x64.exe"
-      dlb:
-    EndDataSection
-    
-    DataSection
-      prefzna:
-        IncludeBinary "..\bin\zeronet-x64"
-      prefznb:
-    EndDataSection
-    
-    DataSection
-      prefipfsa:
-        IncludeBinary "..\bin\ipfs-x64"
-      prefipfsb:
-    EndDataSection
+  Global znsha256$ = "3621349b45ad40a020710607c78e03294b783272240af12a084669478c6a16c6"
+  Global znzip$ = "ZeroNet-win-dist-win64.zip"
+  Global ipfssha256$ = "f7bbfefa25c3c725158ae66d15ba2be5139fa4a93d2736f80446e0f6157d52ff"
+  Global ipfszip$ = "go-ipfs_v0.4.21_windows-amd64.zip"
     
 CompilerElse
   
-    DataSection
-      dla:
-        IncludeBinary "..\bin\dl-x86.exe"
-      dlb:
-    EndDataSection
-    
-    DataSection
-      prefzna:
-        IncludeBinary "..\bin\zeronet-x86"
-      prefznb:
-    EndDataSection
-    
-    DataSection
-      prefipfsa:
-        IncludeBinary "..\bin\ipfs-x86"
-      prefipfsb:
-    EndDataSection
+  Global znsha256$ = "11aa3d06cf09f57eb1de1b15763d0a10773cdf77fe8e8f21c780053a345146cc"
+  Global znzip$ = "ZeroNet-win-dist.zip"
+  Global ipfssha256$ = "07731d13dfc46c023eeef7c5aedba954932f38824a1512f9f428eaf9fa89599b"
+  Global ipfszip$ = "go-ipfs_v0.4.21_windows-386.zip"
     
 CompilerEndIf
 
@@ -159,6 +133,6 @@ DataSection
   removelg:
   IncludeBinary "..\bin\images\remove-24.png"
 EndDataSection
-; IDE Options = PureBasic 5.70 LTS (Windows - x64)
+; IDE Options = PureBasic 5.70 LTS (Windows - x86)
 ; Folding = +
 ; EnableXP

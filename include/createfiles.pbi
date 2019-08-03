@@ -4,15 +4,7 @@
   
   szexe$ = appdir$ + szexe$
   
-  FilePutContents(temp$ + downloaderexe$, ?dla, ?dlb-?dla)
-  
-  FilePutContents(temp$ + preferences$, ?prefipfsa, ?prefipfsb-?prefipfsa)
-  
-  Download()
-  
-  FilePutContents(temp$ + preferences$, ?prefzna, ?prefznb-?prefzna)
-  
-  Download()
+  DownloadZeroNetandIPFS()
   
   LockFile(szexe$)
       

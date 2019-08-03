@@ -15,6 +15,7 @@
   #timersite
   #timerzn
   #timersync
+  #timerautosync
   
   #files
   

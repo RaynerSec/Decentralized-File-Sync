@@ -83,7 +83,17 @@ EndIf
   busy = -1
 
 EndProcedure
-Procedure Sync()
+Procedure Sync( auto = 0 )
+  
+If auto = 1 
+  
+If Val (GetPreferenceString(settingsini$, setautosync$)) = 0 Or Val (GetPreferenceString(settingsini$, setsync$)) = 0
+  
+  ProcedureReturn
+  
+EndIf
+  
+EndIf
   
 If  Val (GetPreferenceString(settingsini$, setsync$)) = 1
   
@@ -94,7 +104,7 @@ If  Val (GetPreferenceString(settingsini$, setsync$)) = 1
   threadsync = CreateThread(@Syncing(), 100)
   AddElement( Threads() ) : Threads() = threadsync
     
-Else
+ElseIf auto = 0
   
   MessageRequester("",enablesyncinfo$)
   

@@ -20,6 +20,7 @@ If OpenWindow( #window, 0, 0, w, h, title$+" v"+version$, windowflags)
   AddWindowTimer(#window,#timer,100)
   AddWindowTimer(#window,#timerzn,3000)
   AddWindowTimer(#window,#timersync,1000)
+  AddWindowTimer(#window,#timerautosync,900000)
   
   GetFiles()
   
@@ -137,6 +138,14 @@ Select WaitWindowEvent()
     
   EndIf
   
+  ElseIf et = #timerautosync
+    
+  If busy = 0
+    
+    Sync(1)
+    
+  EndIf
+    
   EndIf
             
   Case #PB_Event_GadgetDrop
@@ -181,6 +190,6 @@ ForEver
 EndIf
   
 EndProcedure
-; IDE Options = PureBasic 5.70 LTS (Windows - x64)
+; IDE Options = PureBasic 5.70 LTS (Windows - x86)
 ; Folding = +
 ; EnableXP

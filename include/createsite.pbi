@@ -52,6 +52,8 @@ Until Eof(0)
 EndIf
 
   DeleteFile( p$ + cmdres$ )
+  
+  RunProgram( prefix$ + siteaddress$ )
       
 EndProcedure
 ; IDE Options = PureBasic 5.70 LTS (Windows - x64)
