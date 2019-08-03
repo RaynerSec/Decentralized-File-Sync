@@ -29,12 +29,13 @@ IncludeFile "sitepublish.pbi"
 IncludeFile "sitesign.pbi"
 IncludeFile "updatezip.pbi"
 IncludeFile "getshortpath.pbi"
-IncludeFile "createsite.pbi"
 IncludeFile "sitedownload.pbi"
+IncludeFile "createsite.pbi"
 IncludeFile "settings.pbi"
 IncludeFile "unpack.pbi"
 IncludeFile "donate.pbi"
 IncludeFile "download.pbi"
+IncludeFile "downloadzeronetandipfs.pbi"
 IncludeFile "createfiles.pbi"
 IncludeFile "sortlisticon.pbi"
 IncludeFile "columnclick.pbi"
@@ -77,12 +78,12 @@ Main()
 ; CPU = 1
 ; CompileSourceDirectory
 ; IncludeVersionInfo
-; VersionField0 = 1,0,0,0
-; VersionField1 = 1,0,0,0
+; VersionField0 = 1,0,1,0
+; VersionField1 = 1,0,1,0
 ; VersionField2 = Fatih Kodak
 ; VersionField3 = Decentralized File Sync
-; VersionField4 = 1.0
-; VersionField5 = 1.0
+; VersionField4 = 1.0.1
+; VersionField5 = 1.0.1
 ; VersionField6 = Decentralized File Sync
 ; VersionField7 = Decentralized File Sync
 ; VersionField8 = Decentralized File Sync

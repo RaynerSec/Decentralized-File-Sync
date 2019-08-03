@@ -1,5 +1,5 @@
 #define MyAppName "Decentralized File Sync"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.0.1"
 #define MyAppPublisher "Fatih Kodak"
 #define MyAppURL "http://127.0.0.1:43110/17SWVnHoujG92yYGSZvCzPgZEpGVfRF8wi"
 #define MyAppExeName "Decentralized-File-Sync.exe"
@@ -20,7 +20,7 @@ LicenseFile=LICENSE
 OutputBaseFilename=Decentralized-File-Sync-(Installer)
 Compression=none
 PrivilegesRequired=admin
-VersionInfoVersion=1.0.0.0
+VersionInfoVersion=1.0.1.0
 ArchitecturesInstallIn64BitMode=x64
 
 [Languages]
